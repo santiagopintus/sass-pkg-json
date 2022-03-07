@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build-css": "node-sass --include-path scss sass/main.scss > css/main.css",
-    "dev": "nodemon -e scss -x npm run build-css",
-    "minify-css": "cleancss css/main.css -o css/main.min.css"
+    "minify-css": "cleancss css/main.css -o css/main.min.css",
+    "dev": "nodemon -e scss -x \"npm run build-css & npm run minify-css\""
   },
   "repository": {
     "type": "git",
@@ -17,9 +17,6 @@
   ],
   "author": "Santiago Pintus",
   "license": "ISC",
-  "bugs": {
-    "url": ""
-  },
   "homepage": "",
   "devDependencies": {
     "clean-css-cli": "^5.5.2",
