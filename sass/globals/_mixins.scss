@@ -1,0 +1,64 @@
+// MEDIA QUERIES MIXINS
+@mixin mobile {
+  @media only screen and (min-width: $bpM) {
+    @content;
+  }
+}
+//to use write: @include mobile { inside of these brackets go your css }
+
+@mixin tablet {
+  @media only screen and (min-width: $bpM) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $bpL) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: $bpXL) {
+    @content;
+  }
+}
+
+// FLEXBOX MIXINS
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@mixin flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-start-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin flex-end-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@mixin flex-end-start {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+@mixin flex-around-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
