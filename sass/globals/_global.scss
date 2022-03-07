@@ -1,0 +1,25 @@
+/* WITH THIS RULE, 1rem = 10px */
+html {
+  font-size: 62.5%;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+/* NORMALIZING */
+*, *:before, *:after {
+  box-sizing: border-box;
+  font-family: $paragraphFont;
+  color: $textColor;
+}
+/* BODY */
+body {
+  line-height: $lineHeight;
+  background-color: $white;
+  font-size: $fs;
+}
+/* HEADINGS */
+h1 {font-size: $fsH1;}
+h2 {font-size: $fsH2;}
+h3 {font-size: $fsH3;}
+h4 {font-size: $fsH4;}
