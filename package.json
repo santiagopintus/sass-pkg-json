@@ -4,7 +4,8 @@
   "description": "A site using sass",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss sass/main.scss > css/main.css",
+    "start": "npm run dev",
+    "build-css": "node-sass --source-map-embed true --include-path scss sass/main.scss > css/main.css",
     "minify-css": "cleancss css/main.css -o css/main.min.css",
     "dev": "nodemon -e scss -x \"npm run build-css & npm run minify-css\""
   },
